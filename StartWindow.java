@@ -26,7 +26,7 @@ public class StartWindow extends JFrame{
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setContentPane(MainPanel);
-        this.setSize(950,600);
+        this.setSize(1080,600);
         this.setLocationRelativeTo(null);
         this.pack();
 
@@ -75,8 +75,8 @@ public class StartWindow extends JFrame{
                 if(listOfStrings.size() != 0) {
                     GameWindow GWList = new GameWindow(listOfStrings);
                     //GameWindow GW= new GameWindow("Film Chooser"); // конструктор со строкой
-                    GWList.QuestionLabel.setText("База данных загружена. Для начала игры нажмите 'Да'");
-                    GWList.setSize(950,600);
+                    GWList.QuestionLabel.setText("База данных загружена. Для начала игры нажмите 'Нет'");
+                    GWList.setSize(1080,600);
                     GWList.setVisible(true);
                     dispose();
                 }else{
