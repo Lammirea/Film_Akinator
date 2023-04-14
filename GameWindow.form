@@ -18,14 +18,18 @@
         </properties>
         <border type="none"/>
         <children>
-          <component id="3773f" class="javax.swing.JLabel" binding="QuestionLabel">
+          <component id="768b7" class="javax.swing.JTextPane" binding="QuestionPane">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
             </constraints>
             <properties>
+              <background color="-1378570"/>
+              <editable value="true"/>
+              <enabled value="false"/>
               <font name="Candara" size="36" style="0"/>
-              <foreground color="-9671008"/>
-              <text value="Label"/>
+              <foreground color="-13945753"/>
             </properties>
           </component>
         </children>

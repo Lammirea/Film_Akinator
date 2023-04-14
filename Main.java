@@ -5,5 +5,6 @@ public class Main {
         JFrame MainFrame = new StartWindow("Film Chooser");
         MainFrame.setSize(1080,600);
         MainFrame.setVisible(true);
+
     }
 }

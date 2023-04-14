@@ -71,16 +71,21 @@ public class StartWindow extends JFrame{
         StartGameBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
                 if(listOfStrings.size() != 0) {
+                    JFrame GWListFrame = new GameWindow(listOfStrings);
                     GameWindow GWList = new GameWindow(listOfStrings);
+                    //JPanel GWPanel = new JPanel();
                     //GameWindow GW= new GameWindow("Film Chooser"); // конструктор со строкой
-                    GWList.QuestionLabel.setText("База данных загружена. Для начала игры нажмите 'Нет'");
-                    GWList.setSize(1080,600);
-                    GWList.setVisible(true);
+                    //GWList.QuestionPane.setText("База данных загружена. Для начала игры нажмите 'Нет'");
+                    //GWListFrame.add(GWList);
+                    GWListFrame.setSize(1080,600);
+                    GWListFrame.setJMenuBar(GWList.mb);
+
+                    GWListFrame.setSize(1080,600);
+                    GWListFrame.setVisible(true);
+
                     dispose();
                 }else{
-
                     JOptionPane.showMessageDialog(MainPanel,"Сначала выберите базу знаний!","Inane error",
                             JOptionPane.ERROR_MESSAGE);
                 }
